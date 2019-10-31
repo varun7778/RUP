@@ -75,8 +75,11 @@ public class traininfo extends javax.swing.JFrame {
         jPanel30 = new javax.swing.JPanel();
         jPanel31 = new javax.swing.JPanel();
         jPanel32 = new javax.swing.JPanel();
+        jPanel33 = new javax.swing.JPanel();
+        jLabel29 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(30, 39, 46));
@@ -87,7 +90,7 @@ public class traininfo extends javax.swing.JFrame {
         jLabel3.setText("Trains");
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 20, -1, 100));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 690, 130));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 690, 130));
 
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -438,10 +441,41 @@ public class traininfo extends javax.swing.JFrame {
 
         jScrollPane1.setViewportView(jPanel2);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 690, 330));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 690, 330));
+
+        jPanel33.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel33.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseDragged(java.awt.event.MouseEvent evt) {
+                jPanel33MouseDragged(evt);
+            }
+        });
+        jPanel33.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel29.setIcon(new javax.swing.ImageIcon("C:\\Users\\MAHE\\Downloads\\error.png")); // NOI18N
+        jLabel29.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jLabel29MousePressed(evt);
+            }
+        });
+        jPanel33.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 0, 40, 50));
+
+        getContentPane().add(jPanel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 690, 50));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jLabel29MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel29MousePressed
+        // TODO add your handling code here:
+        this.dispose();
+    }//GEN-LAST:event_jLabel29MousePressed
+int xx,xy;
+    private void jPanel33MouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel33MouseDragged
+        // TODO add your handling code here:
+        int x = evt.getXOnScreen();
+        int y = evt.getYOnScreen();
+        this.setLocation(x-xx,y-xy);
+    }//GEN-LAST:event_jPanel33MouseDragged
 
     /**
      * @param args the command line arguments
@@ -488,6 +522,7 @@ public class traininfo extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -521,6 +556,7 @@ public class traininfo extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel30;
     private javax.swing.JPanel jPanel31;
     private javax.swing.JPanel jPanel32;
+    private javax.swing.JPanel jPanel33;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;

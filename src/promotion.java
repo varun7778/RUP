@@ -2,6 +2,7 @@
 import java.awt.*;
 import java.awt.Color;
 import javax.swing.BorderFactory;
+import javax.swing.JOptionPane;
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -33,7 +34,6 @@ public class promotion extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel28 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
-        jProgressBar1 = new javax.swing.JProgressBar();
         jPanel2 = new javax.swing.JPanel();
         jLabel29 = new javax.swing.JLabel();
         jLabel30 = new javax.swing.JLabel();
@@ -42,6 +42,7 @@ public class promotion extends javax.swing.JFrame {
         jLabel35 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel36 = new javax.swing.JLabel();
+        jProgressBar1 = new javax.swing.JProgressBar();
         jLayeredPane2 = new javax.swing.JLayeredPane();
         jPanel7 = new javax.swing.JPanel();
         jLabel23 = new javax.swing.JLabel();
@@ -92,23 +93,22 @@ public class promotion extends javax.swing.JFrame {
         jLabel14 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
+        jPanel14 = new javax.swing.JPanel();
+        jLabel43 = new javax.swing.JLabel();
 
         jLabel1.setText("jLabel1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel28.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
         jLabel28.setForeground(new java.awt.Color(255, 255, 255));
         jLabel28.setText("1");
-        getContentPane().add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 20, 20, 30));
+        getContentPane().add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 20, 20, 160));
 
         jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/circle.png"))); // NOI18N
-        getContentPane().add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, -1, -1));
-
-        jProgressBar1.setBackground(new java.awt.Color(51, 255, 0));
-        jProgressBar1.setForeground(new java.awt.Color(255, 51, 51));
-        getContentPane().add(jProgressBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 680, 20));
+        getContentPane().add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, -1, 160));
 
         jPanel2.setBackground(new java.awt.Color(255, 102, 102));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -145,7 +145,11 @@ public class promotion extends javax.swing.JFrame {
         jLabel36.setText("Preview");
         jPanel2.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 20, -1, 40));
 
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 720, 120));
+        jProgressBar1.setBackground(new java.awt.Color(51, 255, 0));
+        jProgressBar1.setForeground(new java.awt.Color(255, 51, 51));
+        jPanel2.add(jProgressBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 680, 20));
+
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 720, 120));
 
         jPanel7.setBackground(new java.awt.Color(255, 255, 255));
         jPanel7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -422,9 +426,28 @@ public class promotion extends javax.swing.JFrame {
         jLayeredPane2.add(jPanel6);
         jPanel6.setBounds(0, 0, 720, 290);
 
-        getContentPane().add(jLayeredPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 720, 290));
+        getContentPane().add(jLayeredPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 720, 290));
+
+        jPanel14.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel14.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseDragged(java.awt.event.MouseEvent evt) {
+                jPanel14MouseDragged(evt);
+            }
+        });
+        jPanel14.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel43.setIcon(new javax.swing.ImageIcon("C:\\Users\\MAHE\\Downloads\\error.png")); // NOI18N
+        jLabel43.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jLabel43MousePressed(evt);
+            }
+        });
+        jPanel14.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 0, 40, 60));
+
+        getContentPane().add(jPanel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 720, 60));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jLabel23MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel23MousePressed
@@ -470,6 +493,8 @@ public class promotion extends javax.swing.JFrame {
 
     private void jLabel8MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MousePressed
         // TODO add your handling code here:
+        if(promotions.acc==1)
+        {
         jPanel7.setVisible(false);
         jPanel5.setVisible(true);
         jPanel6.setVisible(false);
@@ -477,7 +502,11 @@ public class promotion extends javax.swing.JFrame {
         jLabel35.setFont(new Font("Tekton Pro", Font.PLAIN, 18));
         jLabel36.setForeground(new Color(255,255,255));
         jLabel36.setFont(new Font("Tekton Pro", Font.PLAIN, 27));
-        jProgressBar1.setValue(34);
+        jProgressBar1.setValue(34);}
+        else
+        {
+            JOptionPane.showMessageDialog(this, "Read the Terms & Conditions first", "Error", JOptionPane.ERROR_MESSAGE);
+        }
     }//GEN-LAST:event_jLabel8MousePressed
 
     private void jTextField11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField11ActionPerformed
@@ -541,6 +570,18 @@ public class promotion extends javax.swing.JFrame {
          jPanel11.setBackground(new Color(240,240,240));
          jPanel10.setBackground(new Color(240,240,240));
     }//GEN-LAST:event_jPanel9MousePressed
+
+    private void jLabel43MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel43MousePressed
+        // TODO add your handling code here:
+        this.dispose();
+    }//GEN-LAST:event_jLabel43MousePressed
+int xx,xy;
+    private void jPanel14MouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel14MouseDragged
+        // TODO add your handling code here:
+        int x = evt.getXOnScreen();
+        int y = evt.getYOnScreen();
+        this.setLocation(x-xx,y-xy);
+    }//GEN-LAST:event_jPanel14MouseDragged
 
     /**
      * @param args the command line arguments
@@ -615,6 +656,7 @@ public class promotion extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
@@ -624,6 +666,7 @@ public class promotion extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
+    private javax.swing.JPanel jPanel14;
     public javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     public javax.swing.JPanel jPanel5;

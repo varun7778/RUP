@@ -183,8 +183,12 @@ public class trains extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jTextField2 = new javax.swing.JTextField();
         jRadioButton1 = new javax.swing.JRadioButton();
+        jPanel33 = new javax.swing.JPanel();
+        jLabel102 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLayeredPane1.setMaximumSize(new java.awt.Dimension(820, 460));
         jLayeredPane1.setMinimumSize(new java.awt.Dimension(720, 410));
@@ -936,18 +940,28 @@ public class trains extends javax.swing.JFrame {
 
         jLayeredPane1.add(jPanel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 820, 230));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+        getContentPane().add(jLayeredPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 820, 460));
+
+        jPanel33.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel33.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseDragged(java.awt.event.MouseEvent evt) {
+                jPanel33MouseDragged(evt);
+            }
+        });
+        jPanel33.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel102.setIcon(new javax.swing.ImageIcon("C:\\Users\\MAHE\\Downloads\\error.png")); // NOI18N
+        jLabel102.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jLabel102MousePressed(evt);
+            }
+        });
+        jPanel33.add(jLabel102, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 0, 40, 50));
+
+        getContentPane().add(jPanel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 820, 50));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -1109,6 +1123,18 @@ public class trains extends javax.swing.JFrame {
         jScrollPane6.setVisible(true);
     }//GEN-LAST:event_jLabel55MousePressed
 
+    private void jLabel102MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel102MousePressed
+        // TODO add your handling code here:
+        this.dispose();
+    }//GEN-LAST:event_jLabel102MousePressed
+int xx,xy;
+    private void jPanel33MouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel33MouseDragged
+        // TODO add your handling code here:
+        int x = evt.getXOnScreen();
+        int y = evt.getYOnScreen();
+        this.setLocation(x-xx,y-xy);
+    }//GEN-LAST:event_jPanel33MouseDragged
+
     /**
      * @param args the command line arguments
      */
@@ -1161,6 +1187,7 @@ public class trains extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel100;
+    private javax.swing.JLabel jLabel102;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
@@ -1284,6 +1311,7 @@ public class trains extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel30;
     private javax.swing.JPanel jPanel31;
+    private javax.swing.JPanel jPanel33;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;

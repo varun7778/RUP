@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -9,7 +12,7 @@
  * @author Varun Anusheel
  */
 public class promotions extends javax.swing.JFrame {
-
+public static int acc=0;
     /**
      * Creates new form promotions
      */
@@ -63,10 +66,14 @@ public class promotions extends javax.swing.JFrame {
         jCheckBox1 = new javax.swing.JCheckBox();
         jCheckBox2 = new javax.swing.JCheckBox();
         jButton1 = new javax.swing.JButton();
+        jPanel14 = new javax.swing.JPanel();
+        jLabel29 = new javax.swing.JLabel();
 
         jLabel3.setText("IRCTC offers a wonderful opportunity to reach out to an exclusive registered users base of over 6.6 Crore Creditworthy, Internet savvy users spread across the country and all over the world. Along with options for sending the mails, SMS & advertisements to registered & active user base. IRCTC also offers extremely focused targeting of various sections of our user base such as Age, Sex, Class of travel, ticket status, source station, destination station, schedule arrival & departure time etc. many more permutations & combinations. Train Ticketing Statistics ( Appx.) Total User base N0. of Active Users Daily new User Registration 6.6 Cr 5.2 Cr 25000 Daily Website logins Daily Mobile App logins 40 lacs 20 lacs Daily No. of Tickets booked Daily No. of Tickets Canceled 7.31 lacs 1.49 lacs 1st Class AC 2nd Class AC 3rd Class AC Sleeper Class 1% 7% 29% 63% Credit Card Debit Card Net Banking Wallet 16% 39% 37% 8% User Details Website & Mobile User Ticket Booked & Canceled %Customers Traveled By %Customers Booked through 1) Banner/Video Advertisement on IRCTC Website & Mobile App Currently IRCTC using Google Ad Manager for Banner and video advertisement on various ad slots available on IRCTC website & Mobile app. So interested advertising agencies may please contact us on business@irctc.co.in (mailto:business@irctc.co.in) 2) Advertisement through Promotional Mailers Advertisement through mails is one of the very vital part of marketing and IRCTC has a brand name and credibility to fulfill the dreams of interested companies, who can be immensely benefited by association of IRCTC. Interested companies can advertise their products to grow the business by sending the promotional mailers through IRCTC domain to its registered, transacting and nontransacting users. 3) Advertisement through Promotional SMS IRCTC can connect its larger audience to various companies by sending promotional SMS at right place and right time to IRCTC customers on their mobiles phones. The ad can be given in maximum of 160 characters per SMS. Contact IRCTC Marketing team for further details. 4) Advertisement on ticket booking and cancellation mailers IRCTC offers Excellent opportunity to various Companies for displaying Advertisement Text Links to about 8 Lakh Ticket Confirmation/Cancellation mails sent by IRCTC through email ticketadmin@irctc.co.in . Ticket admin mail screenshot shown below:- 5) Advertisement on ERS issued to customer The banner space of size 970x90 are available on ticket confirmation ERS (Electronic Reservation Slip) of IRCTC for promoting products of various companies. The advertisement on ERS will allow companies to target very exclusive set of IRCTC customers. Contact IRCTC Marketing team for further details. 6) Advertisement through Push Notifiaction on IRCTC Mobile App & Website IRCTC can connect its larger audience to various companies by sending push notification at right place and right time to IRCTC customers. The ad can be given in image file of 360x240 & a icon file of 100x100 along with landing a page URL. Contact IRCTC Marketing team for further details. 7) Advertisement through IRCTC 139 Jingles platform You can book any of the mentioned half hour slots on daily, weekly or monthly basis. As far as full 24 hour booking is concerned you can run jingle on alternate half hour slots which will make sure that your ads are run evenly for half an hour in every hour of the day. Jingle costing is based on half hour slots and there is no unit based costing for it. Contact IRCTC Marketing team for further details.");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLayeredPane1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -211,23 +218,75 @@ public class promotions extends javax.swing.JFrame {
         jPanel1.add(jCheckBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 390, -1, -1));
 
         jButton1.setText("Continue");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 420, -1, -1));
 
         jLayeredPane1.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 820, 460));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLayeredPane1)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLayeredPane1)
-        );
+        getContentPane().add(jLayeredPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, -1, 460));
+
+        jPanel14.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel14.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseDragged(java.awt.event.MouseEvent evt) {
+                jPanel14MouseDragged(evt);
+            }
+        });
+        jPanel14.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel29.setIcon(new javax.swing.ImageIcon("C:\\Users\\MAHE\\Downloads\\error.png")); // NOI18N
+        jLabel29.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jLabel29MousePressed(evt);
+            }
+        });
+        jPanel14.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 0, 40, 50));
+
+        getContentPane().add(jPanel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 820, 50));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jLabel29MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel29MousePressed
+        // TODO add your handling code here:
+        this.dispose();
+    }//GEN-LAST:event_jLabel29MousePressed
+int xx,xy;
+    private void jPanel14MouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel14MouseDragged
+        // TODO add your handling code here:
+        int x = evt.getXOnScreen();
+        int y = evt.getYOnScreen();
+        this.setLocation(x-xx,y-xy);
+    }//GEN-LAST:event_jPanel14MouseDragged
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        if(login.done==0)
+        {
+            JOptionPane.showMessageDialog(this, "You need to login to apply for an Ad", "Login",JOptionPane.ERROR_MESSAGE);
+        }
+        if(jCheckBox1.isSelected()&&jCheckBox2.isSelected())
+        {
+            JOptionPane.showMessageDialog(this, "Select Only One option", "Error", JOptionPane.ERROR_MESSAGE);
+        }
+        else if(jCheckBox2.isSelected() && login.done==1)
+        {
+            promotion newFrame=new promotion();
+            newFrame.jPanel2.setVisible(true);
+            newFrame.jPanel5.setVisible(false);
+            newFrame.jPanel6.setVisible(true);
+            newFrame.jPanel7.setVisible(false);
+            newFrame.setVisible(true);
+            acc=1;
+            this.dispose();
+        }
+        else if(jCheckBox1.isSelected() && login.done==1)
+           JOptionPane.showMessageDialog(this, "Accept the conditions to proceed", "T&C", JOptionPane.INFORMATION_MESSAGE); 
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -284,6 +343,7 @@ public class promotions extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -293,6 +353,7 @@ public class promotions extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     public static javax.swing.JLayeredPane jLayeredPane1;
     public javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel14;
     public javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
