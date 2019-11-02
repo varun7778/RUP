@@ -37,28 +37,20 @@ public static int acc=0;
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
-        jSeparator2 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
         jSeparator4 = new javax.swing.JSeparator();
-        jSeparator5 = new javax.swing.JSeparator();
         jPanel4 = new javax.swing.JPanel();
         jLabel25 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
@@ -97,11 +89,6 @@ public static int acc=0;
         jLabel6.setText("users spread across MIT and all over MAHE. Along with options for sending the mails, SMS & ads to ");
         jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, -1, -1));
 
-        jLabel7.setFont(new java.awt.Font("Kozuka Mincho Pro H", 0, 24)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel7.setText("5) Advertisement on ERS issued to customer");
-        jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 530, -1, -1));
-
         jLabel8.setFont(new java.awt.Font("Tekton Pro", 0, 18)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 51, 51));
         jLabel8.setText("MITRTC offers a wonderful opportunity to reach out to an exclusive registered users base, tech savvy ");
@@ -121,11 +108,6 @@ public static int acc=0;
         jLabel11.setForeground(new java.awt.Color(0, 153, 153));
         jLabel11.setText("Currently MITRTC using our own Ad Manager for Banner and video advertisement on various ad slots ");
         jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, -1, -1));
-
-        jLabel12.setFont(new java.awt.Font("Tekton Pro", 0, 18)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(0, 153, 153));
-        jLabel12.setText("place and right time to MITRTC customers. Contact our team for further details.");
-        jPanel3.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 390, -1, -1));
 
         jLabel13.setFont(new java.awt.Font("Tekton Pro", 0, 18)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(0, 153, 153));
@@ -150,42 +132,20 @@ public static int acc=0;
         jLabel17.setFont(new java.awt.Font("Tekton Pro", 0, 18)); // NOI18N
         jLabel17.setForeground(new java.awt.Color(0, 153, 153));
         jLabel17.setText("to all Ticket Confirmation/Cancellation mails sent by MITRTC through email.");
-        jPanel3.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 490, -1, -1));
+        jPanel3.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 390, -1, -1));
 
         jLabel18.setFont(new java.awt.Font("Kozuka Mincho Pro H", 0, 24)); // NOI18N
         jLabel18.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel18.setText("3) Advertisement through Promotional SMS");
+        jLabel18.setText("3) Advertisement on ticket booking and cancellation mailers");
         jPanel3.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 330, -1, -1));
-
-        jLabel19.setFont(new java.awt.Font("Tekton Pro", 0, 18)); // NOI18N
-        jLabel19.setForeground(new java.awt.Color(0, 153, 153));
-        jLabel19.setText("MITRTC can connect its larger audience to various companies by sending promotional SMS at right");
-        jPanel3.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 370, -1, -1));
-
-        jLabel20.setFont(new java.awt.Font("Tekton Pro", 0, 18)); // NOI18N
-        jLabel20.setForeground(new java.awt.Color(0, 153, 153));
-        jLabel20.setText("Contact MITRTC Marketing team for further details. ");
-        jPanel3.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 590, -1, -1));
-
-        jLabel21.setFont(new java.awt.Font("Kozuka Mincho Pro H", 0, 24)); // NOI18N
-        jLabel21.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel21.setText("4) Advertisement on ticket booking and cancellation mailers");
-        jPanel3.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 430, -1, -1));
 
         jLabel22.setFont(new java.awt.Font("Tekton Pro", 0, 18)); // NOI18N
         jLabel22.setForeground(new java.awt.Color(0, 153, 153));
         jLabel22.setText("MITRTC offers Excellent opportunity to various Companies for displaying Advertisement Text Links ");
-        jPanel3.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 470, -1, -1));
-
-        jLabel23.setFont(new java.awt.Font("Tekton Pro", 0, 18)); // NOI18N
-        jLabel23.setForeground(new java.awt.Color(0, 153, 153));
-        jLabel23.setText("The advertisement on ERS will allow companies to target very exclusive set of MITRTC customers.");
-        jPanel3.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 570, -1, -1));
+        jPanel3.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 360, -1, -1));
         jPanel3.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 80, 680, -1));
-        jPanel3.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 520, 680, 10));
         jPanel3.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 180, 680, 10));
         jPanel3.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 320, 680, 10));
-        jPanel3.add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 420, 680, 10));
 
         jScrollPane1.setViewportView(jPanel3);
 
@@ -330,25 +290,19 @@ int xx,xy;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     public static javax.swing.JLayeredPane jLayeredPane1;
@@ -359,9 +313,7 @@ int xx,xy;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
-    private javax.swing.JSeparator jSeparator5;
     // End of variables declaration//GEN-END:variables
 }

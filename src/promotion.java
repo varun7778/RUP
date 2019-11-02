@@ -20,6 +20,9 @@ public class promotion extends javax.swing.JFrame {
      */
     public promotion() {
         initComponents();
+        jLabel44.setVisible(false); 
+        jLabel45.setVisible(false); 
+        jLabel46.setVisible(false); 
     }
 
     /**
@@ -52,12 +55,6 @@ public class promotion extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jPanel3 = new javax.swing.JPanel();
-        jPanel9 = new javax.swing.JPanel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel37 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
         jPanel10 = new javax.swing.JPanel();
         jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
@@ -93,6 +90,9 @@ public class promotion extends javax.swing.JFrame {
         jLabel14 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
+        jLabel45 = new javax.swing.JLabel();
+        jLabel46 = new javax.swing.JLabel();
         jPanel14 = new javax.swing.JPanel();
         jLabel43 = new javax.swing.JLabel();
 
@@ -186,34 +186,6 @@ public class promotion extends javax.swing.JFrame {
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jPanel9.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                jPanel9MousePressed(evt);
-            }
-        });
-        jPanel9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel5.setFont(new java.awt.Font("Tekton Pro", 0, 36)); // NOI18N
-        jLabel5.setText("636");
-        jPanel9.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, -1, -1));
-
-        jLabel6.setFont(new java.awt.Font("Trajan Pro 3", 0, 14)); // NOI18N
-        jLabel6.setText("Daily Average");
-        jPanel9.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 60, -1, 20));
-
-        jLabel12.setFont(new java.awt.Font("Trajan Pro 3", 0, 14)); // NOI18N
-        jLabel12.setText("19,334 Rs Monthly Max");
-        jPanel9.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 60, -1, -1));
-
-        jLabel37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/rupee.png"))); // NOI18N
-        jPanel9.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, -1, 30));
-
-        jLabel15.setFont(new java.awt.Font("Tekton Pro", 0, 24)); // NOI18N
-        jLabel15.setText(".     ");
-        jPanel9.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 60, -1, -1));
-
-        jPanel3.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 320, 560, 120));
 
         jPanel10.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
@@ -423,6 +395,15 @@ public class promotion extends javax.swing.JFrame {
         jLabel9.setText("NEXT");
         jPanel6.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 260, 30, -1));
 
+        jLabel44.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/report.png"))); // NOI18N
+        jPanel6.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 60, -1, 40));
+
+        jLabel45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/report.png"))); // NOI18N
+        jPanel6.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 150, -1, 40));
+
+        jLabel46.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/report.png"))); // NOI18N
+        jPanel6.add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 230, -1, 40));
+
         jLayeredPane2.add(jPanel6);
         jPanel6.setBounds(0, 0, 720, 290);
 
@@ -452,6 +433,7 @@ public class promotion extends javax.swing.JFrame {
 
     private void jLabel23MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel23MousePressed
         // TODO add your handling code here:
+      JOptionPane.showMessageDialog(this, "you'll get a mail as confirmation", "AD", JOptionPane.INFORMATION_MESSAGE);
 
     }//GEN-LAST:event_jLabel23MousePressed
 
@@ -493,6 +475,22 @@ public class promotion extends javax.swing.JFrame {
 
     private void jLabel8MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MousePressed
         // TODO add your handling code here:
+        int count =0;
+        if(jTextField3.getText().isEmpty())
+        {jLabel44.setVisible(true);count=1;}
+        else
+           jLabel44.setVisible(false); 
+        if(jTextField4.getText().isEmpty())
+        {jLabel45.setVisible(true);count=1;}
+        else
+           jLabel45.setVisible(false); 
+        if(jTextField5.getText().isEmpty())
+        {jLabel46.setVisible(true);count=1;}
+        else
+           jLabel46.setVisible(false); 
+        
+        if(count==0)
+        {
         if(promotions.acc==1)
         {
         jPanel7.setVisible(false);
@@ -506,7 +504,12 @@ public class promotion extends javax.swing.JFrame {
         else
         {
             JOptionPane.showMessageDialog(this, "Read the Terms & Conditions first", "Error", JOptionPane.ERROR_MESSAGE);
-        }
+            promotions newFrame=new promotions();
+        newFrame.setVisible(true);
+        newFrame.jPanel1.setVisible(true);
+        newFrame.jPanel2.setVisible(false);
+        this.dispose();
+        }}
     }//GEN-LAST:event_jLabel8MousePressed
 
     private void jTextField11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField11ActionPerformed
@@ -545,31 +548,17 @@ public class promotion extends javax.swing.JFrame {
         // TODO add your handling code here:
         jPanel10.setBorder(BorderFactory.createLineBorder(Color.black, 4, true));
         jPanel11.setBorder(BorderFactory.createEmptyBorder());
-        jPanel9.setBorder(BorderFactory.createEmptyBorder());
          jPanel10.setBackground(new Color(102,255,102));
          jPanel11.setBackground(new Color(240,240,240));
-        jPanel9.setBackground(new Color(240,240,240));
     }//GEN-LAST:event_jPanel10MousePressed
 
     private void jPanel11MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel11MousePressed
         // TODO add your handling code here:
         jPanel11.setBorder(BorderFactory.createLineBorder(Color.black, 4, true));
         jPanel10.setBorder(BorderFactory.createEmptyBorder());
-        jPanel9.setBorder(BorderFactory.createEmptyBorder());
          jPanel11.setBackground(new Color(102,255,102));
-         jPanel9.setBackground(new Color(240,240,240));
          jPanel10.setBackground(new Color(240,240,240));
     }//GEN-LAST:event_jPanel11MousePressed
-
-    private void jPanel9MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel9MousePressed
-        // TODO add your handling code here:
-        jPanel9.setBorder(BorderFactory.createLineBorder(Color.black, 4, true));
-        jPanel11.setBorder(BorderFactory.createEmptyBorder());
-        jPanel10.setBorder(BorderFactory.createEmptyBorder());
-         jPanel9.setBackground(new Color(102,255,102));
-         jPanel11.setBackground(new Color(240,240,240));
-         jPanel10.setBackground(new Color(240,240,240));
-    }//GEN-LAST:event_jPanel9MousePressed
 
     private void jLabel43MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel43MousePressed
         // TODO add your handling code here:
@@ -622,10 +611,8 @@ int xx,xy;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
@@ -649,7 +636,6 @@ int xx,xy;
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
-    private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
@@ -657,8 +643,9 @@ int xx,xy;
     private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel43;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
@@ -672,7 +659,6 @@ int xx,xy;
     public javax.swing.JPanel jPanel5;
     public javax.swing.JPanel jPanel6;
     public javax.swing.JPanel jPanel7;
-    private javax.swing.JPanel jPanel9;
     private javax.swing.JProgressBar jProgressBar1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;

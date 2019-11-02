@@ -16,6 +16,7 @@ import javax.swing.JOptionPane;
 public class login extends javax.swing.JFrame {
     public static String text;
     public static int done;
+    public static int done1;
     /**
      * Creates new form login
      */
@@ -312,15 +313,15 @@ public class login extends javax.swing.JFrame {
                 jLabel10MousePressed(evt);
             }
         });
-        jPanel5.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 220, -1, -1));
+        jPanel5.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 280, -1, -1));
 
         jLabel11.setFont(new java.awt.Font("Segoe UI Black", 0, 11)); // NOI18N
         jLabel11.setText("NEXT");
-        jPanel5.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 260, 30, -1));
+        jPanel5.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 320, 30, -1));
 
         jLabel33.setFont(new java.awt.Font("Segoe UI Black", 0, 11)); // NOI18N
         jLabel33.setText("Back");
-        jPanel5.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, 40, -1));
+        jPanel5.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 320, 40, -1));
 
         jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/image_1.png"))); // NOI18N
         jLabel34.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -328,7 +329,7 @@ public class login extends javax.swing.JFrame {
                 jLabel34MousePressed(evt);
             }
         });
-        jPanel5.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, -1, -1));
+        jPanel5.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 280, -1, -1));
 
         jLabel39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/report.png"))); // NOI18N
         jPanel5.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 150, -1, 40));
@@ -380,15 +381,15 @@ public class login extends javax.swing.JFrame {
                 jLabel46MousePressed(evt);
             }
         });
-        jPanel8.add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 270, -1, -1));
+        jPanel8.add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 280, -1, -1));
 
         jLabel47.setFont(new java.awt.Font("Segoe UI Black", 0, 11)); // NOI18N
         jLabel47.setText("NEXT");
-        jPanel8.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 310, 30, -1));
+        jPanel8.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 320, 30, -1));
 
         jLabel48.setFont(new java.awt.Font("Segoe UI Black", 0, 11)); // NOI18N
         jLabel48.setText("Back");
-        jPanel8.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 300, 40, -1));
+        jPanel8.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 320, 40, -1));
 
         jLabel49.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/image_1.png"))); // NOI18N
         jLabel49.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -396,7 +397,7 @@ public class login extends javax.swing.JFrame {
                 jLabel49MousePressed(evt);
             }
         });
-        jPanel8.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 260, -1, -1));
+        jPanel8.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 280, -1, -1));
 
         jLabel50.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/report.png"))); // NOI18N
         jPanel8.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 150, -1, 40));
@@ -441,7 +442,7 @@ public class login extends javax.swing.JFrame {
                 jLabel23MousePressed(evt);
             }
         });
-        jPanel7.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 270, -1, -1));
+        jPanel7.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 280, -1, -1));
 
         jLabel24.setFont(new java.awt.Font("Segoe UI Black", 0, 11)); // NOI18N
         jLabel24.setText("Back");
@@ -453,11 +454,11 @@ public class login extends javax.swing.JFrame {
                 jLabel25MousePressed(evt);
             }
         });
-        jPanel7.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, -1, -1));
+        jPanel7.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, -1, 40));
 
         jLabel26.setFont(new java.awt.Font("Segoe UI Black", 0, 11)); // NOI18N
         jLabel26.setText("Register");
-        jPanel7.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 310, 50, -1));
+        jPanel7.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 320, 50, -1));
 
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/report.png"))); // NOI18N
         jPanel7.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 210, -1, 40));
@@ -602,14 +603,25 @@ public class login extends javax.swing.JFrame {
         if(count==0 && jRadioButton2.isSelected())
         {
             done=1;
-            one.jLabel58.setVisible(true);
-            one.jLabel64.setVisible(true);
-            one.jLabel45.setVisible(false);
-            one.jLabel13.setVisible(false);
-            text = jTextField2.getText();
+            done1=0;
+            //text = jTextField2.getText();
+            one newFrame=new one();
+            newFrame.jLabel58.setVisible(true);
+            newFrame.jLabel64.setVisible(true);
+            newFrame.jLabel45.setVisible(false);
+            newFrame.jLabel13.setVisible(false);
+            newFrame.setVisible(true);
             this.dispose();
         }
-        
+        if(count==0 && jRadioButton1.isSelected())
+        {
+            done=0;
+            done1=1;
+            this.dispose();
+            admin1 newFrame=new admin1();
+            newFrame.setVisible(true);
+            this.dispose();
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
@@ -689,7 +701,7 @@ public class login extends javax.swing.JFrame {
         jLabel36.setFont(new Font("Tekton Pro", Font.PLAIN, 18));
         jLabel35.setForeground(new Color(255,255,255));
         jLabel35.setFont(new Font("Tekton Pro", Font.PLAIN, 27));
-        jProgressBar1.setValue(5);
+        jProgressBar1.setValue(5);      
     }//GEN-LAST:event_jLabel34MousePressed
 
     private void jLabel23MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel23MousePressed
@@ -725,6 +737,20 @@ public class login extends javax.swing.JFrame {
 
     private void jLabel25MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel25MousePressed
         // TODO add your handling code here:
+        
+        if(jRadioButton6.isSelected())
+        {
+        jPanel7.setVisible(false);
+        jPanel5.setVisible(false);
+        jPanel6.setVisible(false);
+        jPanel8.setVisible(true);
+        jLabel7.setForeground(new Color(102,102,102));
+        jLabel7.setFont(new Font("Tekton Pro", Font.PLAIN, 18));
+        jLabel36.setForeground(new Color(255,255,255));
+        jLabel36.setFont(new Font("Tekton Pro", Font.PLAIN, 27));
+        jProgressBar1.setValue(34);}
+        if(jRadioButton7.isSelected())
+        {
         jPanel7.setVisible(false);
         jPanel5.setVisible(true);
         jPanel6.setVisible(false);
@@ -733,7 +759,7 @@ public class login extends javax.swing.JFrame {
         jLabel7.setFont(new Font("Tekton Pro", Font.PLAIN, 18));
         jLabel36.setForeground(new Color(255,255,255));
         jLabel36.setFont(new Font("Tekton Pro", Font.PLAIN, 27));
-        jProgressBar1.setValue(34);
+        jProgressBar1.setValue(34);}
     }//GEN-LAST:event_jLabel25MousePressed
 
     private void jLabel10MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MousePressed
@@ -791,7 +817,17 @@ int xx,xy;
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        if(jRadioButton2.isSelected()){
+        int count =0;
+         if(jRadioButton1.isSelected()||jRadioButton2.isSelected())
+        jLabel60.setVisible(false);
+        else
+        {jLabel60.setVisible(true);count=1;}
+        if(jRadioButton1.isSelected() && jRadioButton2.isSelected())
+        {
+            count=1;
+            JOptionPane.showMessageDialog(this, "Select Only One option", "Error", JOptionPane.ERROR_MESSAGE);
+        }
+        if(jRadioButton2.isSelected()&& count==0){
           jRadioButton6.setVisible(false);
           jRadioButton7.setVisible(false);
           jRadioButton7.setSelected(true);
@@ -802,7 +838,7 @@ int xx,xy;
         jPanel7.setVisible(false);
         setVisible(true);}
         
-        if(jRadioButton1.isSelected()){
+        if(jRadioButton1.isSelected()&& count ==0){
           jRadioButton7.setVisible(false);
           jRadioButton6.setVisible(false);
           jRadioButton6.setSelected(true);
@@ -820,7 +856,7 @@ int xx,xy;
 
     private void jLabel46MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel46MousePressed
         // TODO add your handling code here:
-               int count =0,count1=0;
+        int count =0,count1=0;
         if(jRadioButton8.isSelected()||jRadioButton9.isSelected()||jRadioButton10.isSelected())
         jLabel51.setVisible(false);
         else
@@ -861,6 +897,15 @@ int xx,xy;
 
     private void jLabel49MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel49MousePressed
         // TODO add your handling code here:
+        jPanel7.setVisible(false);
+        jPanel5.setVisible(false);
+        jPanel6.setVisible(true);
+        jPanel8.setVisible(false);
+        jLabel36.setForeground(new Color(102,102,102));
+        jLabel36.setFont(new Font("Tekton Pro", Font.PLAIN, 18));
+        jLabel35.setForeground(new Color(255,255,255));
+        jLabel35.setFont(new Font("Tekton Pro", Font.PLAIN, 27));
+        jProgressBar1.setValue(5);
     }//GEN-LAST:event_jLabel49MousePressed
 
     /**

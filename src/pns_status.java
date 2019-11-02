@@ -67,6 +67,7 @@ public class pns_status extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 100, 400, 35));
 
+        jButton1.setFont(new java.awt.Font("NSimSun", 1, 18)); // NOI18N
         jButton1.setText("Check Status");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

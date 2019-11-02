@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -9,7 +12,7 @@
  * @author Varun Anusheel
  */
 public class trains extends javax.swing.JFrame {
-
+public static int price=2767;
     /**
      * Creates new form trains
      */
@@ -69,7 +72,6 @@ public class trains extends javax.swing.JFrame {
         jLabel25 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
         jLabel35 = new javax.swing.JLabel();
         jLabel36 = new javax.swing.JLabel();
         jPanel9 = new javax.swing.JPanel();
@@ -100,7 +102,6 @@ public class trains extends javax.swing.JFrame {
         jLabel50 = new javax.swing.JLabel();
         jLabel51 = new javax.swing.JLabel();
         jLabel52 = new javax.swing.JLabel();
-        jButton5 = new javax.swing.JButton();
         jLabel53 = new javax.swing.JLabel();
         jLabel54 = new javax.swing.JLabel();
         jPanel16 = new javax.swing.JPanel();
@@ -131,7 +132,6 @@ public class trains extends javax.swing.JFrame {
         jLabel71 = new javax.swing.JLabel();
         jLabel72 = new javax.swing.JLabel();
         jLabel73 = new javax.swing.JLabel();
-        jButton7 = new javax.swing.JButton();
         jLabel74 = new javax.swing.JLabel();
         jLabel75 = new javax.swing.JLabel();
         jPanel22 = new javax.swing.JPanel();
@@ -162,7 +162,6 @@ public class trains extends javax.swing.JFrame {
         jLabel92 = new javax.swing.JLabel();
         jLabel93 = new javax.swing.JLabel();
         jLabel94 = new javax.swing.JLabel();
-        jButton9 = new javax.swing.JButton();
         jLabel95 = new javax.swing.JLabel();
         jLabel96 = new javax.swing.JLabel();
         jPanel28 = new javax.swing.JPanel();
@@ -179,10 +178,6 @@ public class trains extends javax.swing.JFrame {
         jComboBox1 = new javax.swing.JComboBox<>();
         jComboBox3 = new javax.swing.JComboBox<>();
         jComboBox2 = new javax.swing.JComboBox<>();
-        jSeparator2 = new javax.swing.JSeparator();
-        jLabel1 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jRadioButton1 = new javax.swing.JRadioButton();
         jPanel33 = new javax.swing.JPanel();
         jLabel102 = new javax.swing.JLabel();
 
@@ -232,7 +227,7 @@ public class trains extends javax.swing.JFrame {
         jPanel3.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 19, -1, 30));
 
         jLabel31.setFont(new java.awt.Font("Tekton Pro", 0, 18)); // NOI18N
-        jLabel31.setText("2,767");
+        jLabel31.setText("2767");
         jPanel3.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 20, -1, 30));
 
         jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/rupee.png"))); // NOI18N
@@ -393,9 +388,6 @@ public class trains extends javax.swing.JFrame {
         jLabel27.setText("N/A");
         jPanel8.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 140, -1, -1));
 
-        jButton2.setText("User Ratings");
-        jPanel8.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 130, 120, 40));
-
         jLabel35.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel35.setForeground(new java.awt.Color(75, 75, 75));
         jLabel35.setText("MITRCTC");
@@ -551,9 +543,6 @@ public class trains extends javax.swing.JFrame {
         jLabel52.setText("N/A");
         jPanel15.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 140, -1, -1));
 
-        jButton5.setText("User Ratings");
-        jPanel15.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 130, 120, 40));
-
         jLabel53.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel53.setForeground(new java.awt.Color(75, 75, 75));
         jLabel53.setText("MITRCTC");
@@ -704,9 +693,6 @@ public class trains extends javax.swing.JFrame {
         jLabel73.setText("N/A");
         jPanel21.add(jLabel73, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 140, -1, -1));
 
-        jButton7.setText("User Ratings");
-        jPanel21.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 130, 120, 40));
-
         jLabel74.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel74.setForeground(new java.awt.Color(75, 75, 75));
         jLabel74.setText("MITRCTC");
@@ -842,9 +828,6 @@ public class trains extends javax.swing.JFrame {
         jLabel94.setText("N/A");
         jPanel27.add(jLabel94, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 140, -1, -1));
 
-        jButton9.setText("User Ratings");
-        jPanel27.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 130, 120, 40));
-
         jLabel95.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel95.setForeground(new java.awt.Color(75, 75, 75));
         jLabel95.setText("MITRCTC");
@@ -903,16 +886,16 @@ public class trains extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-        jPanel13.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 90, 120, 30));
+        jPanel13.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 50, 120, 30));
 
         jLabel37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/calendar(1).png"))); // NOI18N
-        jPanel13.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 80, -1, -1));
+        jPanel13.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 80, -1, -1));
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "All Classes", "Item 2", "Item 3", "Item 4" }));
-        jPanel13.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 20, 100, 30));
+        jPanel13.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 20, 100, 30));
 
         jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Destination", "Item 2", "Item 3", "Item 4" }));
-        jPanel13.add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 80, 130, 30));
+        jPanel13.add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 80, 130, 30));
 
         jComboBox2.setForeground(new java.awt.Color(30, 39, 46));
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "From", "Item 2", "Item 3", "Item 4" }));
@@ -921,22 +904,7 @@ public class trains extends javax.swing.JFrame {
                 jComboBox2ActionPerformed(evt);
             }
         });
-        jPanel13.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, 130, 30));
-        jPanel13.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 50, 250, -1));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/search.png"))); // NOI18N
-        jPanel13.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 20, -1, -1));
-
-        jTextField2.setBackground(new java.awt.Color(30, 39, 46));
-        jTextField2.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField2.setBorder(null);
-        jPanel13.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 20, 250, 30));
-
-        jRadioButton1.setBackground(new java.awt.Color(30, 39, 46));
-        jRadioButton1.setFont(new java.awt.Font("Tekton Pro", 0, 18)); // NOI18N
-        jRadioButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jRadioButton1.setText("Tatkal");
-        jPanel13.add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 90, -1, -1));
+        jPanel13.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 20, 130, 30));
 
         jLayeredPane1.add(jPanel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 820, 230));
 
@@ -966,6 +934,24 @@ public class trains extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        if(one.money > Integer.parseInt(jLabel31.getText()) && login.done==1)
+        {
+            one.money=one.money-Integer.parseInt(jLabel31.getText());
+            qr_code q = new qr_code();
+            q.qr();
+            email e = new email();
+            e.send2();
+            JOptionPane.showMessageDialog(this, "Ticket is booked", "Booking",JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Ticket is sent to your registered email address", "Booking",JOptionPane.INFORMATION_MESSAGE);
+        }
+        else if(login.done==0)
+        {
+            JOptionPane.showMessageDialog(this, "You need to login to book a train", "Login",JOptionPane.ERROR_MESSAGE);
+        }
+        else if(one.money < Integer.parseInt(jLabel31.getText()) && login.done==1)
+        {
+           JOptionPane.showMessageDialog(this, "Insufficient Balance", "ADD MONEY",JOptionPane.ERROR_MESSAGE);  
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jLabel2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MousePressed
@@ -1005,6 +991,39 @@ public class trains extends javax.swing.JFrame {
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
+        if(one.money > Integer.parseInt(jLabel31.getText()) && login.done==1)
+        {
+            one.money=one.money-Integer.parseInt(jLabel31.getText());
+            
+            
+            
+            /*
+            
+            
+            should change jLabel31.getText() with appropriate jlabel later;
+            
+            
+            
+            
+            
+            */
+            
+            
+            qr_code q = new qr_code();
+            q.qr();
+            email e = new email();
+            e.send2();
+            JOptionPane.showMessageDialog(this, "Ticket is booked", "Booking",JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Ticket is sent to your registered email address", "Booking",JOptionPane.INFORMATION_MESSAGE);
+        }
+        else if(login.done==0)
+        {
+            JOptionPane.showMessageDialog(this, "You need to login to book a train", "Login",JOptionPane.ERROR_MESSAGE);
+        }
+        else if(one.money < Integer.parseInt(jLabel31.getText()) && login.done==1)
+        {
+           JOptionPane.showMessageDialog(this, "Insufficient Balance", "ADD MONEY",JOptionPane.ERROR_MESSAGE);  
+        }
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jLabel3MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MousePressed
@@ -1027,6 +1046,40 @@ public class trains extends javax.swing.JFrame {
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
+        
+        if(one.money > Integer.parseInt(jLabel31.getText()) && login.done==1)
+        {
+            one.money=one.money-Integer.parseInt(jLabel31.getText());
+            
+            
+            
+            /*
+            
+            
+            should change jLabel31.getText() with appropriate jlabel later;
+            
+            
+            
+            
+            
+            */
+            
+            
+            qr_code q = new qr_code();
+            q.qr();
+            email e = new email();
+            e.send2();
+            JOptionPane.showMessageDialog(this, "Ticket is booked", "Booking",JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Ticket is sent to your registered email address", "Booking",JOptionPane.INFORMATION_MESSAGE);
+        }
+        else if(login.done==0)
+        {
+            JOptionPane.showMessageDialog(this, "You need to login to book a train", "Login",JOptionPane.ERROR_MESSAGE);
+        }
+        else if(one.money < Integer.parseInt(jLabel31.getText()) && login.done==1)
+        {
+           JOptionPane.showMessageDialog(this, "Insufficient Balance", "ADD MONEY",JOptionPane.ERROR_MESSAGE);  
+        }
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jLabel80MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel80MousePressed
@@ -1040,6 +1093,39 @@ public class trains extends javax.swing.JFrame {
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         // TODO add your handling code here:
+        if(one.money > Integer.parseInt(jLabel31.getText()) && login.done==1)
+        {
+            one.money=one.money-Integer.parseInt(jLabel31.getText());
+            
+            
+            
+            /*
+            
+            
+            should change jLabel31.getText() with appropriate jlabel later;
+            
+            
+            
+            
+            
+            */
+            
+            
+            qr_code q = new qr_code();
+            q.qr();
+            email e = new email();
+            e.send2();
+            JOptionPane.showMessageDialog(this, "Ticket is booked", "Booking",JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Ticket is sent to your registered email address", "Booking",JOptionPane.INFORMATION_MESSAGE);
+        }
+        else if(login.done==0)
+        {
+            JOptionPane.showMessageDialog(this, "You need to login to book a train", "Login",JOptionPane.ERROR_MESSAGE);
+        }
+        else if(one.money < Integer.parseInt(jLabel31.getText()) && login.done==1)
+        {
+           JOptionPane.showMessageDialog(this, "Insufficient Balance", "ADD MONEY",JOptionPane.ERROR_MESSAGE);  
+        }
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jLabel4MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MousePressed
@@ -1173,18 +1259,13 @@ int xx,xy;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JComboBox<String> jComboBox3;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel100;
     private javax.swing.JLabel jLabel102;
@@ -1318,17 +1399,14 @@ int xx,xy;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
-    private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JSeparator jSeparator5;
-    private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
 }
