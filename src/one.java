@@ -2,6 +2,7 @@
 import java.awt.Color;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JTextField;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -62,6 +63,35 @@ int type;
         jPanel14 = new javax.swing.JPanel();
         jLabel29 = new javax.swing.JLabel();
         jLayeredPane3 = new javax.swing.JLayeredPane();
+        jPanel13 = new javax.swing.JPanel();
+        jSeparator2 = new javax.swing.JSeparator();
+        jTextField3 = new javax.swing.JTextField();
+        jTextField4 = new javax.swing.JTextField();
+        jTextField11 = new javax.swing.JTextField();
+        jTextField12 = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jPanel9 = new javax.swing.JPanel();
+        jPanel4 = new javax.swing.JPanel();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel42 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        jComboBox2 = new javax.swing.JComboBox<>();
+        jComboBox3 = new javax.swing.JComboBox<>();
+        jCheckBox1 = new javax.swing.JCheckBox();
+        jCheckBox2 = new javax.swing.JCheckBox();
+        jButton2 = new javax.swing.JButton();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel59 = new javax.swing.JLabel();
+        jLabel60 = new javax.swing.JLabel();
+        jLabel61 = new javax.swing.JLabel();
+        jLabel62 = new javax.swing.JLabel();
+        jDateChooser1 = new com.toedter.calendar.JDateChooser();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel43 = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
         jPanel24 = new javax.swing.JPanel();
         jLabel70 = new javax.swing.JLabel();
         jLabel71 = new javax.swing.JLabel();
@@ -118,36 +148,6 @@ int type;
         jLabel89 = new javax.swing.JLabel();
         jPanel53 = new javax.swing.JPanel();
         jLabel90 = new javax.swing.JLabel();
-        jPanel13 = new javax.swing.JPanel();
-        jSeparator2 = new javax.swing.JSeparator();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField11 = new javax.swing.JTextField();
-        jTextField12 = new javax.swing.JTextField();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
-        jPanel9 = new javax.swing.JPanel();
-        jPanel4 = new javax.swing.JPanel();
-        jLabel24 = new javax.swing.JLabel();
-        jLabel42 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jComboBox2 = new javax.swing.JComboBox<>();
-        jLabel11 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jComboBox3 = new javax.swing.JComboBox<>();
-        jCheckBox1 = new javax.swing.JCheckBox();
-        jCheckBox2 = new javax.swing.JCheckBox();
-        jButton2 = new javax.swing.JButton();
-        jLabel15 = new javax.swing.JLabel();
-        jLabel59 = new javax.swing.JLabel();
-        jLabel60 = new javax.swing.JLabel();
-        jLabel61 = new javax.swing.JLabel();
-        jLabel62 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel43 = new javax.swing.JLabel();
-        jLabel44 = new javax.swing.JLabel();
         jLayeredPane1 = new javax.swing.JLayeredPane();
         jPanel15 = new javax.swing.JPanel();
         jLabel28 = new javax.swing.JLabel();
@@ -291,6 +291,177 @@ int type;
         getContentPane().add(jPanel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 50));
 
         jLayeredPane3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel13.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel13.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jSeparator2.setForeground(new java.awt.Color(0, 0, 0));
+        jSeparator2.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        jPanel13.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 20, 10, 20));
+
+        jTextField3.setBackground(new java.awt.Color(240, 240, 240));
+        jTextField3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jTextField3.setText("Peter England");
+        jTextField3.setBorder(null);
+        jTextField3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jTextField3MousePressed(evt);
+            }
+        });
+        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField3ActionPerformed(evt);
+            }
+        });
+        jPanel13.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 20, 80, -1));
+
+        jTextField4.setBackground(new java.awt.Color(240, 240, 240));
+        jTextField4.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jTextField4.setText("Payment");
+        jTextField4.setBorder(null);
+        jTextField4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jTextField4MousePressed(evt);
+            }
+        });
+        jPanel13.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 20, 90, -1));
+
+        jTextField11.setBackground(new java.awt.Color(240, 240, 240));
+        jTextField11.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jTextField11.setText("www.PeterEnglandtesting.com");
+        jTextField11.setBorder(null);
+        jTextField11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jTextField11MousePressed(evt);
+            }
+        });
+        jTextField11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField11ActionPerformed(evt);
+            }
+        });
+        jPanel13.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 50, 270, 40));
+
+        jTextField12.setBackground(new java.awt.Color(240, 240, 240));
+        jTextField12.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jTextField12.setText("This is just a brief description of the Ad that is being shown");
+        jTextField12.setBorder(null);
+        jTextField12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jTextField12MousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                jTextField12MouseReleased(evt);
+            }
+        });
+        jPanel13.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 93, 370, 30));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/ads.png"))); // NOI18N
+        jPanel13.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 54, -1, 30));
+        jPanel13.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 30, -1, -1));
+
+        jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/error.png"))); // NOI18N
+        jLabel23.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jLabel23MousePressed(evt);
+            }
+        });
+        jPanel13.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 0, -1, 50));
+
+        jLayeredPane3.add(jPanel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 480, 520, 130));
+
+        jPanel9.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel4.setBackground(new java.awt.Color(153, 204, 255));
+        jPanel4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 5, true));
+        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel24.setFont(new java.awt.Font("Century", 1, 48)); // NOI18N
+        jLabel24.setText("BOOK");
+        jPanel4.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, -1, -1));
+
+        jLabel42.setFont(new java.awt.Font("Century Schoolbook", 1, 24)); // NOI18N
+        jLabel42.setText("Your Ticket");
+        jPanel4.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 60, -1, -1));
+
+        jComboBox1.setMaximumRowCount(40);
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "To", "Item 2", "Item 3", "Item 4", "Item 5", "" }));
+        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox1ActionPerformed(evt);
+            }
+        });
+        jPanel4.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 220, 240, -1));
+
+        jComboBox2.setMaximumRowCount(40);
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "From", "Item 2", "Item 3", "Item 4", "Item 5", " " }));
+        jComboBox2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox2ActionPerformed(evt);
+            }
+        });
+        jPanel4.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, 240, -1));
+
+        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "All Classes", "Item 2", "Item 3", "Item 4" }));
+        jPanel4.add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, 240, -1));
+
+        jCheckBox1.setBackground(new java.awt.Color(153, 204, 255));
+        jCheckBox1.setText("Student");
+        jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox1ActionPerformed(evt);
+            }
+        });
+        jPanel4.add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 350, -1, -1));
+
+        jCheckBox2.setBackground(new java.awt.Color(153, 204, 255));
+        jCheckBox2.setText("Journalist");
+        jPanel4.add(jCheckBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 350, -1, -1));
+
+        jButton2.setBackground(new java.awt.Color(255, 255, 255));
+        jButton2.setFont(new java.awt.Font("Nirmala UI", 1, 14)); // NOI18N
+        jButton2.setText("Find a Train");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        jPanel4.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 390, 120, 30));
+
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/station.png"))); // NOI18N
+        jPanel4.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 100, -1, -1));
+
+        jLabel59.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/report.png"))); // NOI18N
+        jPanel4.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 300, -1, 30));
+
+        jLabel60.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/report.png"))); // NOI18N
+        jPanel4.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 174, -1, 30));
+
+        jLabel61.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/report.png"))); // NOI18N
+        jPanel4.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 210, -1, 30));
+
+        jLabel62.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/report.png"))); // NOI18N
+        jPanel4.add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 260, -1, 40));
+
+        jDateChooser1.setDateFormatString("yyyy-MM-dd");
+        jPanel4.add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(31, 270, 230, -1));
+
+        jPanel9.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 50, 300, 460));
+
+        jLabel8.setFont(new java.awt.Font("Felix Titling", 0, 48)); // NOI18N
+        jPanel9.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(383, 174, -1, -1));
+        jPanel9.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(442, 68, -1, -1));
+
+        jLabel43.setFont(new java.awt.Font("Painting With Chocolate", 0, 110)); // NOI18N
+        jLabel43.setText("Booking");
+        jPanel9.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 220, -1, 170));
+
+        jLabel44.setFont(new java.awt.Font("Painting With Chocolate", 0, 110)); // NOI18N
+        jLabel44.setText("Railway");
+        jPanel9.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, -1, 150));
+
+        jLayeredPane3.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 910, 610));
 
         jPanel24.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -616,185 +787,6 @@ int type;
         jPanel24.add(jLayeredPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 490, 610));
 
         jLayeredPane3.add(jPanel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 910, 610));
-
-        jPanel13.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel13.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jSeparator2.setForeground(new java.awt.Color(0, 0, 0));
-        jSeparator2.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        jPanel13.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 20, 10, 20));
-
-        jTextField3.setBackground(new java.awt.Color(240, 240, 240));
-        jTextField3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jTextField3.setText("Peter England");
-        jTextField3.setBorder(null);
-        jTextField3.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                jTextField3MousePressed(evt);
-            }
-        });
-        jTextField3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField3ActionPerformed(evt);
-            }
-        });
-        jPanel13.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 20, 80, -1));
-
-        jTextField4.setBackground(new java.awt.Color(240, 240, 240));
-        jTextField4.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jTextField4.setText("Payment");
-        jTextField4.setBorder(null);
-        jTextField4.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                jTextField4MousePressed(evt);
-            }
-        });
-        jPanel13.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 20, 90, -1));
-
-        jTextField11.setBackground(new java.awt.Color(240, 240, 240));
-        jTextField11.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jTextField11.setText("www.PeterEnglandtesting.com");
-        jTextField11.setBorder(null);
-        jTextField11.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                jTextField11MousePressed(evt);
-            }
-        });
-        jTextField11.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField11ActionPerformed(evt);
-            }
-        });
-        jPanel13.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 50, 270, 40));
-
-        jTextField12.setBackground(new java.awt.Color(240, 240, 240));
-        jTextField12.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jTextField12.setText("This is just a brief description of the Ad that is being shown");
-        jTextField12.setBorder(null);
-        jTextField12.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                jTextField12MousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                jTextField12MouseReleased(evt);
-            }
-        });
-        jPanel13.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 93, 370, 30));
-
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/ads.png"))); // NOI18N
-        jPanel13.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 54, -1, 30));
-        jPanel13.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 30, -1, -1));
-
-        jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/error.png"))); // NOI18N
-        jLabel23.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                jLabel23MousePressed(evt);
-            }
-        });
-        jPanel13.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 0, -1, 50));
-
-        jLayeredPane3.add(jPanel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 480, 520, 130));
-
-        jPanel9.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jPanel4.setBackground(new java.awt.Color(153, 204, 255));
-        jPanel4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 5, true));
-        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel24.setFont(new java.awt.Font("Century", 1, 48)); // NOI18N
-        jLabel24.setText("BOOK");
-        jPanel4.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, -1, -1));
-
-        jLabel42.setFont(new java.awt.Font("Century Schoolbook", 1, 24)); // NOI18N
-        jLabel42.setText("Your Ticket");
-        jPanel4.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 60, -1, -1));
-
-        jComboBox1.setMaximumRowCount(40);
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "To", "Item 2", "Item 3", "Item 4", "Item 5", "" }));
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
-            }
-        });
-        jPanel4.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 220, 240, -1));
-
-        jComboBox2.setMaximumRowCount(40);
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "From", "Item 2", "Item 3", "Item 4", "Item 5", " " }));
-        jComboBox2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox2ActionPerformed(evt);
-            }
-        });
-        jPanel4.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, 240, -1));
-
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/calender.png"))); // NOI18N
-        jPanel4.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 260, 40, 40));
-
-        jTextField1.setBackground(new java.awt.Color(240, 240, 240));
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
-            }
-        });
-        jPanel4.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 270, 200, 20));
-
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "All Classes", "Item 2", "Item 3", "Item 4" }));
-        jPanel4.add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, 240, -1));
-
-        jCheckBox1.setBackground(new java.awt.Color(153, 204, 255));
-        jCheckBox1.setText("Student");
-        jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox1ActionPerformed(evt);
-            }
-        });
-        jPanel4.add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 350, -1, -1));
-
-        jCheckBox2.setBackground(new java.awt.Color(153, 204, 255));
-        jCheckBox2.setText("Journalist");
-        jPanel4.add(jCheckBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 350, -1, -1));
-
-        jButton2.setBackground(new java.awt.Color(255, 255, 255));
-        jButton2.setFont(new java.awt.Font("Nirmala UI", 1, 14)); // NOI18N
-        jButton2.setText("Find a Train");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-        jPanel4.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 390, 120, 30));
-
-        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/station.png"))); // NOI18N
-        jPanel4.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 100, -1, -1));
-
-        jLabel59.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/report.png"))); // NOI18N
-        jPanel4.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 300, -1, 30));
-
-        jLabel60.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/report.png"))); // NOI18N
-        jPanel4.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 174, -1, 30));
-
-        jLabel61.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/report.png"))); // NOI18N
-        jPanel4.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 210, -1, 30));
-
-        jLabel62.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/report.png"))); // NOI18N
-        jPanel4.add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 260, -1, 40));
-
-        jPanel9.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 50, 300, 460));
-
-        jLabel8.setFont(new java.awt.Font("Felix Titling", 0, 48)); // NOI18N
-        jPanel9.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(383, 174, -1, -1));
-        jPanel9.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(442, 68, -1, -1));
-
-        jLabel43.setFont(new java.awt.Font("Painting With Chocolate", 0, 110)); // NOI18N
-        jLabel43.setText("Booking");
-        jPanel9.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 220, -1, 170));
-
-        jLabel44.setFont(new java.awt.Font("Painting With Chocolate", 0, 110)); // NOI18N
-        jLabel44.setText("Railway");
-        jPanel9.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, -1, 150));
-
-        jLayeredPane3.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 910, 610));
 
         jLayeredPane1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -1834,10 +1826,6 @@ int type;
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox2ActionPerformed
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
-
     private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jCheckBox1ActionPerformed
@@ -1853,7 +1841,8 @@ int type;
         {jLabel61.setVisible(true);count =1;}
         else
           jLabel61.setVisible(false);
-        if(jTextField1.getText().isEmpty())
+        //String d1  = ((JTextField)jDateChooser1.getDateEditor().getUiComponent()).getText();
+        if(((JTextField)jDateChooser1.getDateEditor().getUiComponent()).getText().isEmpty())
         {   jLabel62.setVisible(true);count = 1;}
         else
           jLabel62.setVisible(false);
@@ -2023,7 +2012,6 @@ int xx,xy;
 
     private void jTextField3MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField3MousePressed
         // TODO add your handling code here:
-        jTextField1.setText("");
     }//GEN-LAST:event_jTextField3MousePressed
 
     private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
@@ -2497,9 +2485,9 @@ int xx,xy;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JComboBox<String> jComboBox3;
+    private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     public static javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
@@ -2647,7 +2635,6 @@ int xx,xy;
     private javax.swing.JSeparator jSeparator5;
     private javax.swing.JSeparator jSeparator6;
     private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField11;
     private javax.swing.JTextField jTextField12;
     private javax.swing.JTextField jTextField2;
