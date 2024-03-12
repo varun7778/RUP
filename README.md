@@ -13,7 +13,7 @@ Welcome to the Railway Booking System GitHub repository! This Java Swing applica
 
 1. Clone the repository to your local machine using the following command:
    ```
-   git clone https://github.com/username/railway-booking-system.git
+   git clone https://github.com/varun7778/Railway-Booking.git
    ```
 
 2. Open the project in your preferred Java IDE.
